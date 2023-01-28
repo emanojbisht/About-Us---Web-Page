@@ -1,0 +1,113 @@
+/* ***************************************************** */
+/* body */
+body {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* **************************************************** */
+/* header section */
+.header-heading {
+  text-align: center;
+}
+
+.header-summary {
+  text-align: center;
+}
+
+/* ***************************************************** */
+/* main */
+#main {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+/* section left  */
+.main-divLeft {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.main-divRight {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.main-image-div {
+  padding: 10px;
+}
+.main-image {
+  width: 100%;
+  border-radius: 5px;
+}
+/* hidden */
+.main-history {
+  display: none;
+}
+.main-vision {
+  display: none;
+}
+
+.main-goals {
+  display: none;
+}
+
+/* section right */
+
+.right-buttonDiv {
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 5px;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: lightslategrey;
+  color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: white;
+  border: 1px solid rgb(51, 248, 248);
+  cursor: pointer;
+}
+
+/* hidden */
+.right-contentDiv {
+  padding: 40px;
+  text-align: justify;
+}
+.right-contentDiv p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.div-History {
+  display: none;
+}
+.div-Vision {
+  display: none;
+}
+.div-Goals {
+  display: none;
+}
+
+/* when button will be clicked */
+.clickedButton {
+  background-color: white;
+  border: 1px solid rgb(51, 120, 248);
+}
+
+/* ***************************************************** */
+@media screen and (max-width: 800px) {
+  .main-divLeft-hidden {
+    display: none;
+  }
+  .main-divLeft {
+    grid-template-columns: 100%;
+    padding: 0 10px;
+  }
+  .main-divRight {
+    grid-template-columns: 100%;
+  }
+}
